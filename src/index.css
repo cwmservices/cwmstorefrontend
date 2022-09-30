@@ -1,0 +1,11 @@
+*{
+	padding:0;
+	margin:0;
+}
+
+body{
+	font-size:19px;
+	font-family: 'Droid Sans';
+	background-color: rgb(241, 242, 251);
+}
+

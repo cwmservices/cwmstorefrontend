@@ -1,0 +1,73 @@
+@import '../../globals.scss';
+
+.about{
+    width: 84.1%;
+    margin: 0 auto;
+    .about-container{
+    display: flex;
+    background-color: white;  
+    padding-bottom: 80px;
+    padding-top: 150px;
+    justify-content: space-evenly;
+    align-items: center;
+        img{
+        width: 200px;
+        border-radius: 50%;
+        border: 2px solid black;
+        margin-top: 25px;
+        }
+        h1{
+            color: green;
+            font-size: 50px;
+        }
+        span{
+            font-size: 60px;
+        }
+        p{
+            padding-top:10px ;
+            font-size: 20px;
+        }
+        .left-about{
+            width: 500px;
+        }
+        
+    }
+    
+}
+
+.socials{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .social{
+        background-color: white;
+        margin: 10px;
+        img{
+            width: 50px;
+        }
+    }
+}
+
+@media (max-width:$breakpoint-tablet) {
+    .about{
+        width: 100%;
+        .about-container{
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            .left-about{
+                width: 320px;
+                text-align: center;
+            }
+            p{
+                margin-bottom: 20px;
+            }
+        }
+    }
+
+    .socials{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}

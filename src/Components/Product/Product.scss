@@ -1,0 +1,109 @@
+.product{
+    background-color: white;
+    padding: 30px;
+    border-radius: 5px;
+    margin: 20px;
+    width: 250px;
+    box-shadow: 5px 5px 5px rgb(218, 224, 255);
+    p{
+        color: deeppink;
+        font-weight: bold;
+        padding-bottom: 6px;
+    }
+    h3{
+        color:green;
+        font-size: 21px;
+    }
+    img{
+        height: 170px;
+        width: 190px;
+        padding: 15px 5px;
+    }
+    .price{
+        padding: 0;
+        color: blue;
+        font-weight: bold;
+    }
+    .flex-items{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .whishlist{
+            padding: 0;
+            button{
+                background-color: transparent;
+                border: none;
+                outline: none;
+            }
+        }
+        .cart{
+            padding: 0;
+            button{
+                background-color: transparent;
+                border: none;
+                outline: none;
+            }
+        }
+    }
+    .cart{
+        cursor: pointer;
+        opacity: 0.6;
+    }   
+}
+.product:hover{
+    .cart{
+        animation-name:cartAnim;
+        animation-duration: 1s;
+        animation-fill-mode: forwards;
+    }
+    @keyframes cartAnim {
+        0%{
+            transform: scale(0.5);
+            opacity: 0.8;
+        }
+        50%{
+            transform: scale(1);
+            opacity: 0.9;
+        }
+        100%{
+            transform: scale(1);
+            opacity: 1;
+        }
+    }
+}
+
+@media screen and (max-width:500px) {
+    .product{
+    margin: 10px;
+    width: 100px;
+    h3{
+        font-size: 12px;
+    }
+    
+    img{
+        height: 100%;
+        width: 70px;
+    }
+    
+    .flex-items{
+        .price{
+            font-size: 13px;
+        }
+        .whishlist{
+            button{
+                
+            }
+        }
+        .cart{
+            button{
+                padding: 0;
+            }
+        }
+        
+    }
+    .cart{
+        cursor: pointer;
+        opacity: 0.6;
+    }   
+    }
+}

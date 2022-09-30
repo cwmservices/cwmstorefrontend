@@ -1,0 +1,21 @@
+// global variables
+$backgroundColor:#ffffff;
+$footerColor:#000314;
+$headerColor:#000314;
+$productsBackground:#edeef7;
+$sideBarMenuBackground:#ffffff;
+$sideBarMenuHeader:#000314;;
+$buttonBackground:rgb(0, 160, 0);
+// global variables
+
+// global breakpoints
+$breakpoint-tablet: 1150px;
+// global breakpoints
+
+@mixin customButtonStyle {
+    background-color:$buttonBackground;
+	color:white;
+	padding:12px 15px;
+	border:1px solid white;
+	border-radius:8px;
+}

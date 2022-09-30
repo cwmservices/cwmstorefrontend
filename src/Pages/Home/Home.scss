@@ -1,0 +1,133 @@
+@import '../../globals.scss';
+
+.banner{
+    padding-top:70px;
+    position: relative;
+    background-color: rgb(218, 224, 255);
+    img{
+        width: 100%;
+    }
+    h1{
+        position: absolute;
+        top:180px;
+        left: 180px;
+        color: green;
+        font-size: 40px;
+    }
+    button{
+        position: absolute;
+        top: 290px;
+        left: 180px;
+        @include customButtonStyle();
+        padding:15px 25px;
+        background-color: deeppink;
+        outline: none;
+        border: none;
+        font-weight: 500;
+        cursor: pointer;
+        border-radius: 20px;
+        opacity: 0.9;
+    }
+    button:hover{
+        color: white;
+        opacity: 1;
+    }
+}
+
+.banner-mobile{
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: lightgreen;
+    color: whitesmoke;
+    padding: 50px 0px;
+    h1{
+        font-size: 25px;
+        padding-bottom: 20px;
+        text-align: center;
+    }
+    button{
+        padding: 15px 25px;
+        background-color: deeppink;
+        border-radius: 20px;
+        border: none;
+        color: whitesmoke;
+        font-weight: 500;
+        cursor: pointer;
+        opacity: 0.9;
+    }
+    button:hover{
+        color: white;
+        opacity: 1;
+    }
+}
+
+.categories{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: rgb(249, 244, 244);
+    padding: 10px 0px;
+    .category-btn{
+        outline: none;
+        border: none;
+        margin:0px 10px;
+        font-size: 14px;
+        background-color: rgb(218, 224, 255);
+    }
+}
+
+.hr{
+    border-color: white;
+}
+
+
+.products{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color:rgb(250, 246, 246);
+}
+
+.pagination{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+    overflow-x: scroll;
+}
+
+@media (max-width: 1400px) {
+    .banner{
+        display: none;
+    }
+    .banner-mobile{
+        display: flex;
+        padding-top: 125px;
+    }
+    .categories{
+        overflow-x: scroll;
+        justify-content: space-between;
+    }
+    
+    .categories::-webkit-scrollbar {
+        height: 7px;
+        width: 20px;
+    }
+    .categories::-webkit-scrollbar-track {
+        background-color: transparent;
+      }
+    .categories::-webkit-scrollbar-thumb{
+        background-color: #d6dee1;
+        border-radius: 20px;
+        background-clip: content-box;
+    }
+    .categories::-webkit-scrollbar-thumb:hover {
+        background-color: #a8bbbf;
+    }
+    .bottom-hr{
+        border: none;
+    }
+}

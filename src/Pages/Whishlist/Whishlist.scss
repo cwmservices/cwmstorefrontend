@@ -1,0 +1,79 @@
+@import '../../globals.scss';
+
+.whishlist{
+    padding-top: 70px;
+    h3{
+        margin-top: 30px;
+        margin-left: 43px;
+        margin-bottom: 10px;
+    }
+    .whishlist-flex{
+        min-height: 100px;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+        align-items: center;
+            .whishlist-items-flex{
+                display: flex;
+                justify-content: space-between;
+                flex-direction: column;
+                width: 100%;
+                .whishlist-item-row{
+                    height: 100px;
+                    margin: 10px 43px;
+                    background-color: rgb(255, 255, 255);
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-around;
+                    align-items: center;
+                    .whishlist-item-name{
+                        width: 220px;
+                    }
+                    .whishlist-item-category{
+                        width: 100px;
+                    }
+                    .whishlist-item-price{
+                        width: 50px;
+                    }
+                    img{
+                        width: 70px;
+                    }
+                    .cartButton{
+                        background-color: transparent;
+                        border: none;
+                        outline: none;
+                    }
+                    button{
+                        padding: 13px 60px; 
+                        border: 1px solid black;
+                        background-color: black;
+                        color:white;     
+                        span{
+                            padding-left: 10px;
+                        }              
+                    }
+                    
+                }
+            }
+    }
+}
+
+@media (max-width: $breakpoint-tablet) {
+    .whishlist 
+    .whishlist-flex 
+    .whishlist-items-flex 
+    .whishlist-item-row
+    button {
+        padding:10px;
+        border-radius: 10px;
+    }
+    .whishlist .whishlist-flex .whishlist-items-flex .whishlist-item-row .whishlist-item-name {
+        display: none;
+    }
+    .whishlist .whishlist-flex .whishlist-items-flex .whishlist-item-row .whishlist-item-category {
+        padding: 0px 10px;
+    }
+    .whishlist .whishlist-flex .whishlist-items-flex .whishlist-item-row img {
+        width: 60px;
+    }
+}

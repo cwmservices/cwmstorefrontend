@@ -1,0 +1,114 @@
+@import '../../globals.scss';
+
+.website-perks{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgb(248, 242, 242);
+    padding: 20px;
+}
+.perk{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    .detail-perks{
+        margin-left: 20px;
+        h3{
+            color:green;
+            font-size: 18px;
+        }
+        p{
+            font-size: 16px;
+        }
+    }
+}
+
+
+
+.footer-flex{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+    background-color: rgb(248, 242, 242);
+    padding-top: 30px;
+    padding-bottom: 20px;
+}
+
+.footer-div{
+    li{
+        list-style: none;
+        padding: 0px 20px;
+        margin: 15px;
+        font-size: 17px;
+        opacity: 0.9;
+        cursor: pointer;
+        .phone{
+            color: green;
+            font-size: 22px;
+            font-weight: bold;
+        }
+        
+    }
+    li:hover{
+        opacity: 1;
+    }
+    .phone-icon{
+        span{
+         padding: 7px;
+        }
+        .number{
+            padding-left: 20px;
+        }
+     }
+    .footer-nav-heading{
+        font-weight: bold;
+        color: green;
+        font-size: 18px;
+    }
+    .contact-perk{
+        color: green;
+    }
+}
+
+
+.footer-copyright{
+    background-color: $headerColor;
+    color: rgb(245, 238, 238);
+    text-align: center;
+    padding: 15px;
+    font-size: 15px;
+}
+
+
+@media (max-width: $breakpoint-tablet) {
+    .website-perks{
+        flex-direction: column;
+    }
+    .perk{
+        margin: 7px;
+        background-color: rgb(248, 251, 248);
+        justify-content: center;
+        width: 100%;
+        padding: 30px 0px;
+    }
+    .footer-flex{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .footer-div{
+        width: 300px;
+        text-align: center;
+        background-color: rgb(248, 251, 248);
+        width: 100%;
+        margin: 8px;
+        padding: 20px 0px;
+    }
+    .footer-copyright {
+        font-size: 12px;
+    }
+}

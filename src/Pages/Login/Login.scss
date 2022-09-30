@@ -1,0 +1,65 @@
+@import '../../globals.scss';
+
+.Login{
+    padding-top: 150px;
+    padding-bottom: 80px;
+    .Login-container{
+        display: flex;
+            margin: 0 auto;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+            background-color: white;
+            width: 400px;
+            padding: 30px 20px;
+            border-radius: 20px;
+        form{
+            display: flex;
+            margin: 0 auto;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+            padding: 5px 20px;
+            border-radius: 20px;
+        }
+    img{
+        width:130px;
+        margin: 10px;
+    }
+    input{
+        background-color: whitesmoke;
+        border: none;
+        outline: none;
+        border-radius: 10px;
+        padding: 10px 0px;
+        width: 300px;
+        margin: 10px;
+        padding-left: 10px;
+    }
+    button{
+        padding: 10px 0px;
+        background-color: rgb(251, 159, 0);
+        color: white;
+        border: none;
+        outline: none;
+        border-radius: 10px;
+        margin: 10px;
+        width: 300px;
+        cursor: pointer;
+    }
+    }   
+}
+
+@media (max-width:$breakpoint-tablet) {
+    .Login{
+        .Login-container{
+            width: 300px;
+            button{
+                width: 200px;
+            }
+            input{
+                width: 200px;
+            }
+        }
+    }
+}

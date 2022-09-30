@@ -1,0 +1,49 @@
+@import '../../globals.scss';
+
+.single-post{
+    padding-top: 100px;
+    padding-bottom: 30px;
+    text-align: center;
+    margin: 0 auto;
+    width: 80%;
+    background-color: white;
+    padding-left: 30px;
+    padding-right: 30px;
+    img{
+        width: 500px;
+        padding-top: 20px;
+    }
+    p{
+        padding-top: 20px;
+        text-align: justify;
+    }
+}
+
+.socials{
+    display: flex;
+    justify-content: center;
+    width: 80%;
+    margin: 0 auto;
+    align-items: center;
+    background-color: white;
+    padding: 30px;
+    .social{
+        margin: 10px;
+        img{
+            width: 50px;
+        }
+    }
+}
+
+@media (max-width:$breakpoint-tablet) {
+    .single-post{
+        padding-left: 40px;
+        padding-right: 40px;
+        img{
+            width: 300px;
+        }
+    }
+    .socials{
+        padding: 10px 40px;
+    }
+}
